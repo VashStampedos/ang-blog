@@ -1,0 +1,11 @@
+<div>
+    <ul class="rounded" >
+      <li *ngFor="let blog of blogs" >
+         <a routerLink="/articles/{{blog.id}}">
+          {{blog.id}},{{blog.name}},{{blog.idUser}},{{blog.user?.email}}
+         </a>
+      </li>
+      
+    </ul>
+    <!-- (click)="ShowArticleOfBlog(blog)" -->
+</div>

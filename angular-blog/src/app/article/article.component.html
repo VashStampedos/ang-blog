@@ -1,0 +1,7 @@
+<button type="button" (click)="goBack()">go back</button>
+<div *ngIf="blog">
+    <ul class="rounded" *ngFor="let article of blog.articles">
+      <li >{{article.id}},{{article.title}},{{article.description}},  {{article.idBlog}}, {{length}}</li>
+      
+    </ul>
+</div>
